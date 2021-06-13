@@ -4,13 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*---------------------------------------NAVIGATION-----------------------------------------*/
-
 body{
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
+
+.button__primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+/*---------------------------------------NAVIGATION-----------------------------------------*/
 
 .navbar{
     display: flex;
@@ -25,27 +39,38 @@ body{
 .navbar__logo{
     width: 100%;
 }
-.nav__item{
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
 
-}
 .nav__item:hover{
     border: 2px solid blue;
 }
 
-
-
 /*----------------xxxxx-----------------------NAVIGATION--------------xxxxx---------------------------*/
+/*-------------------------------------HERO SECTION---------------------------------------*/
+.hero__image__container{
+    width: 100%;
+}
+.hero__image{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.container{
+   max-width: 100%;    /*for mobile devices*/
+   padding: 0 20px;
+   margin: 0 auto;
+}
+.hero__text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+/*--------------------xxxx-----------------HERO SECTION-------------------xxx--------------------*/
 
 
 /*-----------------------------FOR TABLET --------------------------------------------------*/
@@ -53,6 +78,12 @@ body{
     .navbar{
         justify-content: space-between;
         padding: 2px 30px;
+    }
+    .hero__container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 }
 /*---------------xxx--------------FOR TABLET -------------------xxxx-------------------------------*/
@@ -64,14 +95,26 @@ body{
     .navbar__brand{
         width: 150px;
     }
-    .nav__item{
+    .button__primary{
         padding: 20px;
         font-size: 20px;
     }
+    .hero__description{
+        width: 100%;
+    }
+    .container{
+        max-width: 900px;
+    }
 }
 
-
-
-
-
 /*----------------xxxx-------------FOR LAPTOP SCREEN -----------------------xxxx---------------------------*/
+
+@media (min-width:1400px){
+    .container{
+        max-width: 1250px;
+    }
+
+.hero__text{
+    font-size: 50px;
+}
+}
