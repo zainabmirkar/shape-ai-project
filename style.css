@@ -93,11 +93,159 @@ body{
     text-align: center;
 }
 
-
-
-
-
 /*-------------xxxx----------------------------explore section-----------xxx-------------------------*/
+/*--------------------------------------restaurants lists-------------------------------------------*/
+.restaurant__images__container{
+    width: 100%;
+    
+    
+}
+.restaurant__images__row__one,.restaurant__images__row__two  {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+.restaurant__images__row__one{
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+.restaurant__image__1,.restaurant__image__4{
+    width: 100%;
+    height: 120px;
+}
+.restaurant__image__2,.restaurant__image__3{
+    width: 120%;
+    height: 200px;
+}
+
+
+.restaurant__1,.restaurant__2,.restaurant__3,.restaurant__4{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.restaurant__text{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.explore__menu__container{
+    margin-top: 50px;
+}
+/*------------------xxx--------------------restaurants lists---------------------xxx----------------------*/
+/*----------------------------------------STAY UPDATED--------------------------------------------*/
+
+
+
+.stay__updated__text{
+         display: block;
+         text-align: center;
+         margin-top: 25px;
+         font-size: 37px;
+         margin-bottom: 10px;
+}
+.stay__updated__email{
+    display: block;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 55px;
+    height: 30px;
+}
+.email__input{  
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;  
+    padding-left: 10px; 
+    
+}
+.stay__updated__button{
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+/*-----------------------xxxx-----------------STAY UPDATED--------------------xxx------------------------*/
+/*-----------------------------random pic-------------------------------*/
+.pic__container{
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    position: relative;
+}
+.something{
+    width: 100%;
+    height: 100%;
+}
+.just__pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.centered__text{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*----------xxxx-------------------random pic-------------xxx------------------*/
+/*---------------------------------last section-------------------------------*/
+.last__section__container{
+    border: 1px solid red;
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 0.2px;
+    border-radius: 10px;
+    
+    
+    
+}
+.img__logo{
+      margin-top: -63px;
+      padding-bottom: 1px;
+}
+.list-items{
+      list-style: none;
+      display: block;
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: -50px;
+    
+}
+.list-item1,.list-item2,.list-item3,.list-item4,.list-item5,.list-item6{
+    padding-bottom: 10px;
+    font-size: 19px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------xxxx----------------------last section--------xxx-----------------------*/
+
 
 
 /*-----------------------------FOR TABLET --------------------------------------------------*/
@@ -147,8 +295,72 @@ body{
 
     }
     .explore__menu__text{
-        font-size: 50px;
+        font-size: 40px;
     }
+    .restaurant__container{
+        display: flex;
+        align-items: center;
+    }
+    .restaurant__text{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .restaurant__images__container{
+        margin-top: 30px;
+    }
+
+
+    /* stay updated part */
+    .stay__updated__text{
+        margin-bottom: -20px;
+    }
+     
+    .stay__updated__main{
+        display: flex;
+       align-items: center;               /*difficult part*/
+        flex-direction: row;
+        
+        margin-left: 40px;
+        
+   
+    }
+     /* .stay__updated__email{
+        width: 100%;
+    } */
+    .stay__updated__button{
+        
+         display: block;
+        align-items: center;
+         margin-right: 150px;  
+         height: 30px; 
+        width: 200px;
+        margin-left: 190px; 
+       font-size: 15px;
+       padding-bottom: 25px;
+        
+    }
+
+    .email__input{
+        margin-top: 40px;
+        height: 5px;
+        width: 300px;
+        
+    }  
+    .stay__updated__container{
+        padding-left: 30px;
+      
+    }
+    .just__pic{
+        margin-top: 30px;
+        height: 90%;
+    }
+
+   
+
+
+
+
 }
 /*---------------xxx--------------FOR TABLET -------------------xxxx-------------------------------*/
 
@@ -172,6 +384,28 @@ body{
     .explore__menu__lists{
         gap: 40px;
     }
+    .navbar{
+        height: 80px;
+    
+    }
+
+    .stay__updated__text{
+        display: block;
+        text-align:left;
+        padding-left: 290px;
+      
+       
+    }
+    .stay__updated__button{
+        display: block;
+       padding-bottom: 40px;
+       margin-left: 250px ;
+    }
+   .pic__container{
+       margin-top: 120px;
+   }
+
+
 }
 
 /*----------------xxxx-------------FOR LAPTOP SCREEN -----------------------xxxx---------------------------*/
@@ -184,4 +418,40 @@ body{
 .hero__text{
     font-size: 50px;
 }
+.explore__menu__container{
+    margin-top: 80px;
+}
+.explore__menu__text{
+    font-size: 40px;
+}
+.stay__updated__button{
+    display: inline;
+    text-align: center;
+    width: 100px;
+    
+     margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px; 
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.stay__updated__text{
+    display: block;
+    text-align:left;
+    padding-left: 290px;
+    font-size: 45px;
+    margin-bottom: -30px;
+   
+}
+.stay__updated__container{
+   margin-top: 50px;
+    margin-bottom: 50px;
+}
+ .pic__container{ 
+    margin-top: 5px; 
+}  
+
 }
